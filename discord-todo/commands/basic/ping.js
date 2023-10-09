@@ -15,7 +15,7 @@ module.exports = {
 			console.log(`Created by ${interaction.member.displayName}`)
 			// Create an ephemeral reply with an embed
 			const embed = new EmbedBuilder().setDescription('Pong!');
-
+			
 			interaction.reply({ embeds: [embed], ephemeral: true })
 				.then(() => console.log('Reply sent.'))
 				.catch(console.error);
